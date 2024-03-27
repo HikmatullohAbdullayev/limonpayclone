@@ -2,9 +2,14 @@ import React from 'react';
 
 function Service(props) {
     return (
-        <div>
-            Service
-        </div>
+        <section className=''>
+            <div className="container">
+                    <div className="card">
+                        card-1
+                    </div>
+            </div>
+            
+        </section>
     );
 }
 

@@ -1,7 +1,7 @@
 // import Image from "next/image";
 
 import Valyuta from "./sections/Valyuta";
-import Util from "./sections/Util";
+import Utils from "./sections/Utils";
 import Intro from "./sections/Intro";
 import Limon from "./sections/Limon";
 import Service from "./sections/Service";
@@ -14,13 +14,13 @@ import Brend from "./sections/Brend";
 export default function Home() {
   return (
    <>
-   <main className="flex min-h-screen flex-col items-center justify-between p-24">
+   <main className="">
     <Intro/>
     <YouTube/>
     <Service/>
     <Limon/>
     <Valyuta/>
-    <Util/>
+    <Utils/>
     <Boshqalar/>
     <AppStore/>
     <Rating/>

@@ -1,9 +1,8 @@
-import { Inter } from "next/font/google";
+
 import "./globals.css";
 import Header from "./sections/Header";
 import Footer from "./sections/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -13,9 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="flex flex-col justify-between  h-screen">
+      <div className="wrapper">
       <Header/>
       {children}
+      </div>
       <Footer/>
       </body>
     </html>
