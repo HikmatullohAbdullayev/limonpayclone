@@ -6,7 +6,7 @@ import Transform from "@/assets/icon/Transform";
 
 function Valyuta(props) {
   return (
-    <section>
+    <section className="my-10">
       <div className="container">
         <div className="flex flex-col">
           <div className="flex justify-between items-center mb-5">
@@ -24,7 +24,7 @@ function Valyuta(props) {
             </div>
           </div>
           <div className=" grid lg:grid-cols-2 gap-5 grid-cols-1 items-stretch">
-            <div className="bg-slate-50 w-full">
+            <div className="bg-slate-50 w-full p-5 rounded-xl">
               <div className="flex border-b border-solid border-gray-300">
                 <input
                   className="focus:outline-none lg:text-[34px] text-[18px] w-full exchange_input leading-[49px] font-bold text-[#A5AAB4] bg-transparent"
@@ -64,7 +64,7 @@ function Valyuta(props) {
               </div>
             </div>
 
-            <div className="img">
+            <div className="p-5 rounded-xl bg-slate-50 w-full">
               <Image src={Rasm} alt="img" />
             </div>
           </div>
