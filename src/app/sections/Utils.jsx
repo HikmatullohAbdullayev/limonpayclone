@@ -5,13 +5,15 @@ import InputMask from "react-input-mask";
 
 import Util from "../../assets/img/utils.png";
 import Daraxt from "../../assets/img/daraxt.png";
+import Buttons from "../components/Buttons";
 
 function Utils(props) {
   return (
     <section>
-      <div className="flex flex-col">
-        <h2>Utilitalar</h2>
-        <div className="flex">
+      <div className="container my-16 flex gap-10  w-full">
+      <div className="flex flex-col max-w-[700px]">
+        <h2 className="text-[24px] font-bold leading-[33px] text-[#17171C] mb-8">Utilitalar</h2>
+        <div className="flex items-center justify-between lg:justify-start">
           <div className="img1">
             <Image src={Util} alt="img" />
           </div>
@@ -20,15 +22,15 @@ function Utils(props) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-start">
-        <h2>Ekspress to`lov</h2>
-        <form>
-          <div className="inp">
-            <label htmlFor="tel">Telefon raqami</label>
+      <div className="flex flex-col text-start max-w-[600px]">
+        <h2 className="text-[24px] font-bold leading-[33px] text-[#17171C] mb-8">Ekspress to`lov</h2>
+        <form className="flex flex-col w-full">
+          <div className=" flex flex-col w-[530px] mb-6  ">
+            <label className="font-semibold mb-3  text-[14px] leading-[18px] text-[#2B2B30]" htmlFor="tel">Telefon raqami</label>
             <InputMask mask="+\9\98 (99) 999-99-99" maskChar="_">
               {(inputProps) => (
                 <input
-                className=""
+                className="border-[#E6E9EF]  w-full  placeholder:font-semibold py-[13px] pl-[10px] rounded-[8px] focus:outline-[#ffc007] focus:outline-[1px] border text-[14px] leading-[18px] placeholder:text-[#A5AAB4] transiition-all duration-300"
                   {...inputProps}
                   type="text"
                   name="tel"
@@ -38,11 +40,12 @@ function Utils(props) {
               )}
             </InputMask>
           </div>
-          <div className="inp">
-            <label htmlFor="sum">To`lov miqdori</label>
+          <div className=" flex flex-col max-w-[530px] mb-6 ">
+            <label className="font-semibold mb-3 text-[14px] leading-[18px] text-[#2B2B30]"  htmlFor="sum">To`lov miqdori</label>
             <InputMask
+                className="border-[#E6E9EF]  placeholder:font-semibold py-[13px] pl-[10px] rounded-[8px] focus:outline-[#ffc007] focus:outline-[1px] border text-[14px] leading-[18px] placeholder:text-[#A5AAB4] transiition-all duration-300"
         mask="9 999 999 999"
-        maskChar="_"
+        maskChar=" "
         placeholder="10 000"
         value={props.amount}
         onChange={props.onChange}
@@ -50,9 +53,12 @@ function Utils(props) {
         {(inputProps) => <input {...inputProps} />}
       </InputMask>
           </div>
+          <Buttons pusto={true}>
+            To`lov`
+          </Buttons>
         </form>
       </div>
-      Utils
+      </div>
     </section>
   );
 }
