@@ -31,9 +31,9 @@ function Boshqalar(props) {
         },
     ]
     return (
-        <section>
+        <section className='my-10'>
             <div className="container">
-                <div className="top">
+                <div className="flex justify-between items-center py-5">
                     <h2 className='text-[19px] lg:text-[24px] font-bold leading-[33px] text-[#17171C] '>
                     Boshqa turkumlar
                     </h2>
