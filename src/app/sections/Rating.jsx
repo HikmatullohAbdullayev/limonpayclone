@@ -9,7 +9,7 @@ import Ster from "../../assets/img/stars.png"
 
 function Rating(props) {
     return (
-        <div>
+        <section>
              <div className="container  mt-20 ">
       <div className="flex justify-between gap-5 mb-10 ">
         <div className="flex w-[500px] justify-between rounded-lg   bg-slate-100  ">
@@ -68,7 +68,7 @@ function Rating(props) {
         
       </div>
     </div>
-        </div>
+    </section>
     );
 }
 
